@@ -4,9 +4,11 @@ import { Navbar } from './Components/navbar';
 import { GlobalStyle } from './Components/Styles';
 import { Cart } from './Pages/Cart/Cart';
 import { Shop } from './Pages/Shop/Shop';
+import { ShopContextProvider } from './Context/ShopContext';
 
 function App() {
   return (
+    <ShopContextProvider>
       <Router>
         <GlobalStyle/>
         <Navbar/>
@@ -15,6 +17,7 @@ function App() {
             <Route path='/cart' element={<Cart/>}/>
           </Routes>
       </Router>
+    </ShopContextProvider>
   );
 }
 
