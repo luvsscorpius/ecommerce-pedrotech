@@ -24,6 +24,14 @@ export const ShopContextProvider = (props) => {
         setCartItems((prev) => ({...prev, [itemId]: prev[itemId] + 1 }))
     }
 
+    // Funcao para remover do carrinho
+    const removeFromCart = (itemId) => {
+        // O (prev) e o estado anterior do carrinho
+        // o operador spread {...prev} cria uma copia superficial do estado anterior do carrinho.
+        // prev[itemId] verifica se a chave ja existe no objeto prev e acessa o valor atual da chave itemId no objeto prev. Se itemId for prev ele tira 1.
+        setCartItems((prev) => ({...prev, [itemId]: prev[itemId] - 1 }))
+    }
+
     return (
     <ShopContext.Provider>{props.children}</ShopContext.Provider>
   )
