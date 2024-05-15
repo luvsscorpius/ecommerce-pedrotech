@@ -51,3 +51,7 @@ export const description = styled.div`
 export const p = styled.p`
 
 `
+
+export const button = styled.button`
+    
+`

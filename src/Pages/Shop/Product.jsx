@@ -12,6 +12,8 @@ export const Product = (props) => {
                 <P.p><b>{productName}</b></P.p>
                 <P.p>${price}</P.p>
             </P.description>
+
+            <P.button>Add To Cart</P.button>
         </P.product>
     )
 }
