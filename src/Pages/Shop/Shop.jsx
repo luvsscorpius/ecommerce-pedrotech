@@ -1,5 +1,7 @@
 import React from 'react'
 import * as S from './Styles'
+import {PRODUCTS} from '../../products'
+import { Product } from './Product'
 
 export const Shop = () => {
   return (
@@ -9,7 +11,9 @@ export const Shop = () => {
         </S.shopTitle>
 
         <S.Products>
-            
+            {PRODUCTS.map((product) => 
+              <Product data={product}/>
+            )}
         </S.Products>
     </S.Shop>
   )
