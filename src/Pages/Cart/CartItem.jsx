@@ -11,6 +11,12 @@ export const CartItem = (props) => {
         <C.description>
             <p><b>{productName}</b></p>
             <p>${price}</p>
+
+            <C.countHandler>
+                <button>-</button>
+                <input value='' />
+                <button>+</button>
+            </C.countHandler>
         </C.description>
     </C.cartItem>
   )
