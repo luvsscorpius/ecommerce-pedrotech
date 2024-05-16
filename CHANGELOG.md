@@ -1,3 +1,12 @@
+# [1.2.0](https://github.com/luvsscorpius/ecommerce-pedrotech/compare/v1.1.0...v1.2.0) (2024-05-16)
+
+
+### Features
+
+* **cart and cartitem components:** creating two components to show the products on the cart ([4816d3c](https://github.com/luvsscorpius/ecommerce-pedrotech/commit/4816d3ce448e46bedf508db696bf6371287c4ab8))
+* **cartitem:** adding value to the input on the cart to show how many items you have added ([a7f4480](https://github.com/luvsscorpius/ecommerce-pedrotech/commit/a7f4480d7550869b55d0d14399ff4ffc3a05fbca))
+* **cartitem:** adding value to the input on the cart to show how many items you have added ([2da1741](https://github.com/luvsscorpius/ecommerce-pedrotech/commit/2da1741121a9d6ace7148b80529dcea2dcfef36e))
+
 # [1.1.0](https://github.com/luvsscorpius/ecommerce-pedrotech/compare/v1.0.0...v1.1.0) (2024-05-15)
 
 
