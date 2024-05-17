@@ -17,6 +17,10 @@ export const Navbar = styled.div`
     display: flex;
     justify-content: flex-end;
     align-items: center;
+
+    @media (max-width: 700px) {
+      width: 100%;
+    }
 `
 
 export const Links = styled.div`

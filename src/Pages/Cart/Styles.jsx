@@ -6,7 +6,9 @@ export const cart = styled.div`
     justify-content: center;
     align-items: center;
 `
-export const h1 = styled.h1``
+export const h1 = styled.h1`
+    margin-top: 10px;
+`
 
 export const cartItems = styled.div`
 `
@@ -37,6 +39,12 @@ export const cartItem = styled.div`
     img {
         width: 200px;
     }
+
+    @media (max-width: 700px) {
+        width: 90vw;
+        height: 350px;
+        margin-top: 10px;
+    }
 `
 
 export const description = styled.div`
@@ -47,6 +55,10 @@ export const description = styled.div`
     width: 100%;
     font-size: 30px;
     gap: 30px;
+
+    @media (max-width: 700px) {
+        width: 50%;
+    }
 `
 
 export const countHandler = styled.div`
