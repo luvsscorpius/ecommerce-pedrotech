@@ -32,8 +32,12 @@ export const ShopContextProvider = (props) => {
         setCartItems((prev) => ({...prev, [itemId]: prev[itemId] - 1 }))
     }
 
+    const updateCartItemCount = (newAmount, itemId) => {
+        setCartItems((prev) => ({...prev, [itemId]: newAmount}))
+    }
+
     // Nesse objeto voce passara tudo oque voce vai acessar de diferentes paginas
-    const contextValue = {cartItems, addToCart, removeFromCart}
+    const contextValue = {cartItems, addToCart, removeFromCart, updateCartItemCount}
 
     return (
     <ShopContext.Provider value={contextValue}>{props.children}</ShopContext.Provider>
