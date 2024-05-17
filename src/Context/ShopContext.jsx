@@ -36,8 +36,22 @@ export const ShopContextProvider = (props) => {
         setCartItems((prev) => ({...prev, [itemId]: newAmount}))
     }
 
+    // Funcao para conseguir o total do carrinho
+    const getTotalCartAmount = () => {
+        let totalAmount = 0
+        for (const item in cartItems) {
+            if (cartItems[item] > 0) {
+                // Aqui voce acha um elemento especifico em um array e se o id for igual o item a gente pega o item do carrinho que foi encontrado e multiplica pelo preco
+                let itemInfo = PRODUCTS.find((product) => product.id === Number(item))
+                totalAmount += cartItems[item] * itemInfo.price
+            }
+        }
+        
+        return totalAmount
+    }
+
     // Nesse objeto voce passara tudo oque voce vai acessar de diferentes paginas
-    const contextValue = {cartItems, addToCart, removeFromCart, updateCartItemCount}
+    const contextValue = {cartItems, addToCart, removeFromCart, updateCartItemCount, getTotalCartAmount}
 
     return (
     <ShopContext.Provider value={contextValue}>{props.children}</ShopContext.Provider>
