@@ -27,11 +27,13 @@ export const Cart = () => {
         })}
       </C.cartItems>
 
+      {totalAmount > 0 ?
       <C.checkout>
         <p>Subtotal: ${totalAmount}</p>
         <button onClick={() => navigate('/')}>Continue Shopping</button>
         <button>Checkout</button>
       </C.checkout>
+      : <C.h1>Your cart is Empty</C.h1> }
     </C.cart>
   )
 }
