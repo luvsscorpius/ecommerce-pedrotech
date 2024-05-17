@@ -1,3 +1,13 @@
+# [1.3.0](https://github.com/luvsscorpius/ecommerce-pedrotech/compare/v1.2.0...v1.3.0) (2024-05-17)
+
+
+### Features
+
+* **add and remove:** importing addToCart and removeFromCart functions ([1601c35](https://github.com/luvsscorpius/ecommerce-pedrotech/commit/1601c35874d283de19e35762d50d759f1ad37e50))
+* **gettotalcartamount:** creating a function that calculates the total amount of the cart ([cb6433e](https://github.com/luvsscorpius/ecommerce-pedrotech/commit/cb6433e06d57a5368a89fb0fd577c6bbca4dbd6a))
+* **navigate:** adding a function to the continue shopping button to navigate back to the shop ([be2ea02](https://github.com/luvsscorpius/ecommerce-pedrotech/commit/be2ea026914e53346c16ed7f4d6d5ff51a133845))
+* **updatecartitemcount:** creating a new function to update the input value on the cart ([1b52cfa](https://github.com/luvsscorpius/ecommerce-pedrotech/commit/1b52cfa0f2ceddda647384033dce9b24b4870235))
+
 # [1.2.0](https://github.com/luvsscorpius/ecommerce-pedrotech/compare/v1.1.0...v1.2.0) (2024-05-16)
 
 
