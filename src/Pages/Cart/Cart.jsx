@@ -21,6 +21,12 @@ export const Cart = () => {
           } 
         })}
       </C.cartItems>
+
+      <C.checkout>
+        <p>Subtotal: $</p>
+        <button>Continue Shopping</button>
+        <button>checkout</button>
+      </C.checkout>
     </C.cart>
   )
 }

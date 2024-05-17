@@ -10,6 +10,18 @@ export const h1 = styled.h1``
 
 export const cartItems = styled.div`
 `
+export const checkout = styled.div`
+    button {
+        width: 150px;
+        height: 56px;
+        background-color: rgb(19, 19, 19);
+        color: white;
+        border: none;
+        border-radius: 8px;
+        margin: 10px;
+        cursor: pointer;
+    }
+`
 
 // CartItem
 
@@ -42,18 +54,5 @@ export const countHandler = styled.div`
         width: 40px;
         text-align: center;
         font-weight: bolder; 
-    }
-`
-
-export const checkout = styled.div`
-    button {
-        width: 150px;
-        height: 56px;
-        background-color: rgb(19, 19, 19);
-        color: white;
-        border: none;
-        border-radius: 8px;
-        margin: 10px;
-        cursor: pointer;
     }
 `
